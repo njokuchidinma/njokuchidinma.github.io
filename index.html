@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uche's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/3839e61e6e.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Python Developer</p>
+            <h1>Hi, I'm <span>Chidinma</span><br>Njoku from Nigeria</h1>
+        </div>
+    </div>
+</div>
+<!-- ----------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi again!
+                    My name is Chidinma Uchechi Njoku and I'm a 400 level Computer Engineering student at Micheal Okpara University of Agriculture Umudike, Abia State, Nigeria. 
+                    I'm a python developer focused majorly on Back-End Web Development (using Django framework).
+                    <br>
+                    I'm passionate about providing solutions to users and the technical aspects of bringing ideas to life.
+                    This passion alongside my reasoning and imagination help me discover new insights and workout meaningful, liberatory solutions.
+                    <br>
+                    I'm happiest when I'm creating, learning and exploring on how to make things better.
+                    I’m a fan of Davido, Games (table tennis & video games), TV series and a book lover.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2023</span><br>B.Eng from MOUAU</li>
+                        <li><span>2022</span><br>Coursera Cert from UM</li>
+                        <li><span>2021</span><br>Bootcamp Cert from WT</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Web Developement</span><br>Web App Development</li>
+                        <li><span>Game Development</span><br>Building Mini Games</li>
+                        <li><span>App Development</span><br>Building Cross-platform Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>2022</span><br>Python for Everybody Specialization</li>
+                        <li><span>2021</span><br>Cybersecurity Bootcamp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------services------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <h2>Web Developement</h2>
+                <p>
+                    Using Django to create beautiful usuable and accessible web apps.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <h2>Game Developement</h2>
+                <p>
+                    In my spare time, I use pygame to recreate my favorite childhood games. 
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <h2>App Developement</h2>
+                <p>
+                   Using kivy, I intend on creating cross-platform apps.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------projects------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/food.jpg">
+                <div class="layer">
+                    <h3>Online Food Delivery App</h3>
+                    <p>
+                        This website will help order, pay and track food delivery.
+                        Functions properly for consumers and distributors.
+                    </p>
+                    <a href="https://fooddeliveryver1.pythonanywhere.com/"><i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/media.jpg">
+                <div class="layer">
+                    <h3>Saaspik Clone</h3>
+                    <p>The goal? To project my backend skills when working with front-end templates</p>
+                    <a href="https://saaspik.pythonanywhere.com/"><i class="fa fa-external-link" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa fa-paper-plane" aria-hidden="true"></i> njokuchidinma16@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/njokuchidinmaxx"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/njokuchidinma"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/chidinma-njoku-592a34216/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </div>
+                <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy; Chidinma.<i class="fa fa-heart" aria-hidden="true"></i> </p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+           tablink.classList.remove("active-link"); 
+        }
+        for(tabcontent of tabcontents){
+           tabcontent.classList.remove("active-tab"); 
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxF5kCd_w99bUIJBeaYcqGQDNueLP5biiRW5c64PHCUgEAPaiI-xJT0OvFJi13cYyof/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset( )
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
